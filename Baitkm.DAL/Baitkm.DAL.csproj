@@ -1,0 +1,134 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Configurations>Debug;Release;LocalTest;Local212</Configurations>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\**" />
+    <EmbeddedResource Remove="Migrations\**" />
+    <None Remove="Migrations\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Migrations\20201002145657_Initial.cs" />
+    <Compile Include="Migrations\20201002145657_Initial.Designer.cs" />
+    <Compile Include="Migrations\20201002150435_Update_AnnouncementAttachments.cs" />
+    <Compile Include="Migrations\20201002150435_Update_AnnouncementAttachments.Designer.cs" />
+    <Compile Include="Migrations\20201002151147_Update_Configurations.cs" />
+    <Compile Include="Migrations\20201002151147_Update_Configurations.Designer.cs" />
+    <Compile Include="Migrations\20201003104454_Update_Password_Table.cs" />
+    <Compile Include="Migrations\20201003104454_Update_Password_Table.Designer.cs" />
+    <Compile Include="Migrations\20201003114905_Update_Announcement.cs" />
+    <Compile Include="Migrations\20201003114905_Update_Announcement.Designer.cs" />
+    <Compile Include="Migrations\20201005150906_Remove_Facts_Announcements_Table.cs" />
+    <Compile Include="Migrations\20201005150906_Remove_Facts_Announcements_Table.Designer.cs" />
+    <Compile Include="Migrations\20201005151123_Remove_SubscribeAnnouncements_Table.cs" />
+    <Compile Include="Migrations\20201005151123_Remove_SubscribeAnnouncements_Table.Designer.cs" />
+    <Compile Include="Migrations\20201005151418_Add_SubscribeAnnouncements_Table.cs" />
+    <Compile Include="Migrations\20201005151418_Add_SubscribeAnnouncements_Table.Designer.cs" />
+    <Compile Include="Migrations\20201005151533_Update_SubscribeAnnouncements_Table.cs" />
+    <Compile Include="Migrations\20201005151533_Update_SubscribeAnnouncements_Table.Designer.cs" />
+    <Compile Include="Migrations\20201005153000_Remove_AnnouncementIdFromFacts.cs" />
+    <Compile Include="Migrations\20201005153000_Remove_AnnouncementIdFromFacts.Designer.cs" />
+    <Compile Include="Migrations\20201005153432_Add_Facts_Table.cs" />
+    <Compile Include="Migrations\20201005153432_Add_Facts_Table.Designer.cs" />
+    <Compile Include="Migrations\20201006061010_Update_SubAnnouncement_Table.cs" />
+    <Compile Include="Migrations\20201006061010_Update_SubAnnouncement_Table.Designer.cs" />
+    <Compile Include="Migrations\20201006061246_Update_SubAnnouncement_Table_2.cs" />
+    <Compile Include="Migrations\20201006061246_Update_SubAnnouncement_Table_2.Designer.cs" />
+    <Compile Include="Migrations\20201006065653_Drop_GuestSubAnnouncement_Table.cs" />
+    <Compile Include="Migrations\20201006065653_Drop_GuestSubAnnouncement_Table.Designer.cs" />
+    <Compile Include="Migrations\20201006081932_Update_Configuration_Table.cs" />
+    <Compile Include="Migrations\20201006081932_Update_Configuration_Table.Designer.cs" />
+    <Compile Include="Migrations\20201006144020_Update_Rating_Table.cs" />
+    <Compile Include="Migrations\20201006144020_Update_Rating_Table.Designer.cs" />
+    <Compile Include="Migrations\20201014133519_Add_NewColumn_Rating_In_Announcement.cs" />
+    <Compile Include="Migrations\20201014133519_Add_NewColumn_Rating_In_Announcement.Designer.cs" />
+    <Compile Include="Migrations\20201030071618__Migration_1.cs" />
+    <Compile Include="Migrations\20201030071618__Migration_1.Designer.cs" />
+    <Compile Include="Migrations\20201030132406_Add_NewColumn_ArabianAddress.cs" />
+    <Compile Include="Migrations\20201030132406_Add_NewColumn_ArabianAddress.Designer.cs" />
+    <Compile Include="Migrations\20201113110328_RemoveTable_GuestSaveFilter__GuestSaveFilterFeatures.cs" />
+    <Compile Include="Migrations\20201113110328_RemoveTable_GuestSaveFilter__GuestSaveFilterFeatures.Designer.cs" />
+    <Compile Include="Migrations\20201113115819_Add_NewColumn_InSaveFilter.cs" />
+    <Compile Include="Migrations\20201113115819_Add_NewColumn_InSaveFilter.Designer.cs" />
+    <Compile Include="Migrations\20201113131351_Add_NewColumn_CityName_CountryName.cs" />
+    <Compile Include="Migrations\20201113131351_Add_NewColumn_CityName_CountryName.Designer.cs" />
+    <Compile Include="Migrations\20201113145811_RemoveTable_GuestFavourite.cs" />
+    <Compile Include="Migrations\20201113145811_RemoveTable_GuestFavourite.Designer.cs" />
+    <Compile Include="Migrations\20201113150137_Update_Favourite.cs" />
+    <Compile Include="Migrations\20201113150137_Update_Favourite.Designer.cs" />
+    <Compile Include="Migrations\20201124083258_Delete_Guest_and_User_Settings_Merged.cs" />
+    <Compile Include="Migrations\20201124083258_Delete_Guest_and_User_Settings_Merged.Designer.cs" />
+    <Compile Include="Migrations\20201130150517_Update_PersonSettings_DeleteBehavior.cs" />
+    <Compile Include="Migrations\20201130150517_Update_PersonSettings_DeleteBehavior.Designer.cs" />
+    <Compile Include="Migrations\20201216105503_Add_CascadeDelete_in_SomeTables.cs" />
+    <Compile Include="Migrations\20201216105503_Add_CascadeDelete_in_SomeTables.Designer.cs" />
+    <Compile Include="Migrations\20210616012101_Add Column CodeAr For Currency Table.cs" />
+    <Compile Include="Migrations\20210616012101_Add Column CodeAr For Currency Table.Designer.cs" />
+    <Compile Include="Migrations\20210707035610_AddColumnLastDateToAnnoucementTbl.cs" />
+    <Compile Include="Migrations\20210707035610_AddColumnLastDateToAnnoucementTbl.Designer.cs" />
+    <Compile Include="Migrations\20210912221135_arabic country in table cities.cs" />
+    <Compile Include="Migrations\20210912221135_arabic country in table cities.Designer.cs" />
+    <Compile Include="Migrations\20210913202321_Add Column Arabic City Name To CityTable.cs" />
+    <Compile Include="Migrations\20210913202321_Add Column Arabic City Name To CityTable.Designer.cs" />
+    <Compile Include="Migrations\20211014130613_Add table Watched.cs" />
+    <Compile Include="Migrations\20211014130613_Add table Watched.Designer.cs" />
+    <Compile Include="Migrations\20211022122108_remove-table-watched.cs" />
+    <Compile Include="Migrations\20211022122108_remove-table-watched.Designer.cs" />
+    <Compile Include="Migrations\20211022122234_remove-table-watched2.cs" />
+    <Compile Include="Migrations\20211022122234_remove-table-watched2.Designer.cs" />
+    <Compile Include="Migrations\20220216113324_Add Table AnnouncementCategories.cs" />
+    <Compile Include="Migrations\20220216113324_Add Table AnnouncementCategories.Designer.cs" />
+    <Compile Include="Migrations\20220309233603_WhatsApp Added To Announcement.cs" />
+    <Compile Include="Migrations\20220309233603_WhatsApp Added To Announcement.Designer.cs" />
+    <Compile Include="Migrations\20220312120440_Add RealAgentCompanyName Column To Announcemnt Table.cs" />
+    <Compile Include="Migrations\20220312120440_Add RealAgentCompanyName Column To Announcemnt Table.Designer.cs" />
+    <Compile Include="Migrations\20220312151053_Add WhatsAppCountryCode Column To Announcemnt Table.cs" />
+    <Compile Include="Migrations\20220312151053_Add WhatsAppCountryCode Column To Announcemnt Table.Designer.cs" />
+    <Compile Include="Migrations\20220804055710_add type column to attachment.cs" />
+    <Compile Include="Migrations\20220804055710_add type column to attachment.Designer.cs" />
+    <Compile Include="Migrations\20220823145956_make area optional.cs" />
+    <Compile Include="Migrations\20220823145956_make area optional.Designer.cs" />
+    <Compile Include="Migrations\20220924232835_self Relation Announcment.cs" />
+    <Compile Include="Migrations\20220924232835_self Relation Announcment.Designer.cs" />
+    <Compile Include="Migrations\20230128013144_add description column to user table.cs" />
+    <Compile Include="Migrations\20230128013144_add description column to user table.Designer.cs" />
+    <Compile Include="Migrations\20230201025915_add UserRate Table.cs" />
+    <Compile Include="Migrations\20230201025915_add UserRate Table.Designer.cs" />
+    <Compile Include="Migrations\20230201030051_add UserRate Table details.cs" />
+    <Compile Include="Migrations\20230201030051_add UserRate Table details.Designer.cs" />
+    <Compile Include="Migrations\20230201031003_UserRating change UserId and GuestId to be Nullable.cs" />
+    <Compile Include="Migrations\20230201031003_UserRating change UserId and GuestId to be Nullable.Designer.cs" />
+    <Compile Include="Migrations\BaitkmDbContextModelSnapshot.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.2.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="4.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="4.0.1" />
+    <PackageReference Include="Twilio" Version="5.30.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Baitkm.DTO\Baitkm.DTO.csproj" />
+    <ProjectReference Include="..\Baitkm.Entities\Baitkm.Entities.csproj" />
+    <ProjectReference Include="..\Baitkm.Infrastructure\Baitkm.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.EntityFrameworkCore">
+      <HintPath>C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.entityframeworkcore\2.2.0\lib\netstandard2.0\Microsoft.EntityFrameworkCore.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
